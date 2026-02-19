@@ -1,0 +1,135 @@
+/**
+ * Admin Dashboard Theme
+ * Primary color: #b52c1f
+ * Box-shadow rgba: rgba(181, 44, 31, opacity)
+ */
+
+:root {
+    --primary: #b52c1f !important;
+    --purple: #b52c1f !important;
+    --primary-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.25);
+    --primary-shadow-strong: 0 0 0 0.2rem rgba(181, 44, 31, 0.5);
+    --primary-glow: 0 0 10px rgba(181, 44, 31, 0.4);
+    --primary-card-shadow: 0 4px 24px 0 rgba(181, 44, 31, 0.12);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #b52c1f !important;
+    border-color: #b52c1f !important;
+}
+
+.btn-primary:hover {
+    background-color: #9a251a !important;
+    border-color: #9a251a !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.5) !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.5) !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.5) !important;
+}
+
+/* Form controls */
+.form-control:focus,
+.form-control.focus {
+    border-color: #b52c1f !important;
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.25) !important;
+}
+
+.input-group:focus-within .form-control {
+    border-color: #b52c1f !important;
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.25) !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.25) !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #b52c1f !important;
+    background-color: #b52c1f !important;
+}
+
+/* Text & links */
+.text-primary,
+a.text-primary:hover,
+a.text-primary:focus,
+.brand-text.text-primary {
+    color: #b52c1f !important;
+}
+
+/* Badges & pills */
+.badge-primary,
+.bg-primary {
+    background-color: #b52c1f !important;
+}
+
+.badge-primary.badge-glow,
+.border-primary.badge-glow,
+.bg-primary.badge-glow {
+    box-shadow: 0 0 10px rgba(181, 44, 31, 0.4) !important;
+}
+
+.border-primary {
+    border-color: #b52c1f !important;
+}
+
+/* Cards */
+.card.border-primary {
+    border-color: #b52c1f !important;
+    box-shadow: 0 4px 24px 0 rgba(181, 44, 31, 0.12) !important;
+}
+
+/* Dropdown & nav */
+.dropdown-item.active,
+.nav-pills .nav-link.active {
+    background-color: #b52c1f !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: rgba(181, 44, 31, 0.1) !important;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+    background-color: #b52c1f !important;
+    border-color: #b52c1f !important;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(181, 44, 31, 0.25) !important;
+}
+
+/* List group */
+.list-group-item-primary {
+    background-color: rgba(181, 44, 31, 0.1) !important;
+    color: #b52c1f !important;
+}
+
+/* Alert */
+.alert-primary {
+    background-color: rgba(181, 44, 31, 0.12) !important;
+    border-color: rgba(181, 44, 31, 0.3) !important;
+    color: #9a251a !important;
+}
+
+.alert-primary .alert-link {
+    color: #9a251a !important;
+}

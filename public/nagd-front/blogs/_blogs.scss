@@ -1,0 +1,260 @@
+.blogs-page {
+    padding: 100px 0 0 0;
+    @media (max-width: $max-9) {
+        padding: 80px 0 0 0;
+    }
+    @media (max-width: $max-5) {
+        padding: 60px 0 0 0;
+    }
+    .blog-page-row {
+        align-items: flex-start;
+    }
+    .blog-sidebar {
+        position: sticky;
+        top: 75px;
+        margin-bottom: 2rem;
+        @media (max-width: 991px) {
+            position: static;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .blog-sidebar-inner {
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 1.5rem 1.25rem;
+        // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .blog-sidebar-label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 0.5rem;
+        text-transform: none;
+    }
+    .blog-sidebar-search {
+        margin-bottom: 1.25rem;
+    }
+    .blog-search-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .blog-search-input {
+        width: 100%;
+        padding: 0.6rem 2.25rem 0.6rem 1.5rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        transition: border-color 0.2s;
+        &:focus {
+            outline: none;
+            border-color: #b52c1f;
+        }
+        &::placeholder {
+            color: #999;
+        }
+    }
+    .blog-search-icon {
+        position: absolute;
+        right: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+        pointer-events: none;
+    }
+    .blog-sidebar-filter {
+        margin-bottom: 1.25rem;
+    }
+    .blog-filter-select {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        background: #fff;
+        cursor: pointer;
+        color: #333;
+        &:focus {
+            outline: none;
+            border-color: #b52c1f;
+        }
+    }
+    .blog-sidebar-categories {
+        margin-bottom: 0;
+    }
+    .blog-categories-list {
+        margin: 0;
+        padding: 0;
+    }
+    .blog-categories-list li {
+        margin-bottom: 0.35rem;
+    }
+    .blog-cat-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        text-align: right;
+        padding: 0.5rem 0.75rem;
+        border: none;
+        background: transparent;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #555;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+        [dir="rtl"] & {
+            flex-direction: row-reverse;
+        }
+        &:hover {
+            background: rgba(181, 44, 31, 0.08);
+            color: #b52c1f;
+        }
+        &.active {
+            background: rgba(181, 44, 31, 0.12);
+            color: #b52c1f;
+            font-weight: 600;
+        }
+        .blog-cat-label {
+            flex: 1;
+        }
+        .blog-cat-count {
+            flex-shrink: 0;
+            margin-left: 0.5rem;
+            [dir="rtl"] & {
+                margin-left: 0;
+                margin-right: 0.5rem;
+            }
+            font-weight: 600;
+            opacity: 0.85;
+        }
+    }
+    .blog-col.blog-col-hidden {
+        display: none !important;
+    }
+    .blog-no-results {
+        color: #666;
+        font-size: 1rem;
+    }
+    .blog {
+        .blog-card {
+            margin-bottom: 50px !important;
+            @media (max-width: $max-9) {
+                margin-bottom: 40px !important;
+            }
+            @media (max-width: $max-5) {
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+}
+
+.one-blog {
+    padding: 25px 15px 100px 15px;
+    color: #000;
+    direction: rtl;
+    text-align: right;
+    @media (max-width: $max-9) {
+        padding: 25px 15px 80px 15px;
+    }
+    @media (max-width: $max-5) {
+        padding: 20px 15px 60px 15px;
+    }
+    .one-blog-article {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .one-blog-breadcrumb {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        a {
+            color: #b52c1f;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .breadcrumb-sep {
+            margin: 0 0.35rem;
+            color: #000;
+        }
+        .breadcrumb-current {
+            color: #000;
+        }
+    }
+    .one-blog-header {
+        margin-bottom: 2rem;
+    }
+    .one-blog-category {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #b52c1f;
+        margin-bottom: 0.5rem;
+    }
+    .one-blog-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 0 0 0.75rem 0;
+        color: #000;
+        @media (max-width: $max-5) {
+            font-size: 1.4rem;
+        }
+    }
+    .one-blog-meta {
+        font-size: 0.9rem;
+        color: #000;
+        .meta-sep {
+            margin: 0 0.25rem;
+        }
+    }
+    .one-blog-body {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: #000;
+            &:first-of-type {
+                margin-top: 1.5rem;
+            }
+        }
+        p {
+            margin: 0 0 1rem 0;
+            color: #000;
+        }
+        .one-blog-lead {
+            font-size: 1.15rem;
+            color: #000;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    .one-blog-footer {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #eee;
+    }
+    .one-blog-back {
+        color: #b52c1f;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// LTR style when html lang=en (all pages)
+html[lang="en"],
+[lang="en"] {
+    .one-blog {
+        direction: ltr;
+        text-align: left;
+    }
+}

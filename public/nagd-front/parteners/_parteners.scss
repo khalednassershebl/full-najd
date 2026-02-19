@@ -1,0 +1,117 @@
+.brands-page {
+    .partners {
+        padding: 100px 0 100px 0;
+        position: relative;
+        @media (max-width: $max-9) {
+            padding: 80px 0 80px 0;
+        }
+        @media (max-width: $max-5) {
+            padding: 75px 0 75px 0;
+        }
+        .section-header {
+            margin-bottom: 75px;
+            @media (max-width: $max-9) {
+                margin-bottom: 50px;
+            }
+            @media (max-width: $max-5) {
+                margin-bottom: 40px;
+            }
+            .heading {
+                font-size: 2.5rem;
+                @media (max-width: $max-9) {
+                    font-size: 2rem;
+                }
+                @media (max-width: $max-5) {
+                    font-size: 1.2rem;
+                }
+                span {
+                    background-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: linear-gradient(222deg, #4a64ea 0%, #596fe3 75%);
+                    background-size: cover;
+                    background-position: center center;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin-top: 8px;
+                    margin-bottom: 10px;
+                    font-family: "num";
+                    @media (max-width: $max-9) {
+                        font-size: 2.5rem;
+                    }
+                    @media (max-width: $max-5) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .partners-logos {
+            border-bottom: 1px solid #444c80;
+            direction: rtl;
+            @media (max-width: $max-5) {
+                border: unset;
+            }
+            .partner-card {
+                padding: 30px 0 30px 30px;
+                border-left: 1px solid #444c80;
+                @media (max-width: $max-9) {
+                    padding: 25px 0 25px 25px;
+                }
+                @media (max-width: $max-5) {
+                    border: unset;
+                    padding: 20px 0 20px 20px;
+                }
+                &:hover {
+                    img {
+                        filter: contrast(1);
+                        transform: scale(1.1);
+                    }
+                }
+                img {
+                    width: 140px;
+                    max-width: 100%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    filter: contrast(0.1);
+                    transition: all 0.3s ease-in-out;
+                    @media (max-width: $max-9) {
+                        width: 120px;
+                    }
+                    @media (max-width: $max-5) {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        .unborderd {
+            border: unset !important;
+        }
+    }
+}
+
+// LTR styles for English language (all pages)
+html[lang="en"],
+[lang="en"] {
+    .brands-page {
+        .partners {
+            .partners-logos {
+                direction: ltr;
+                
+                .partner-card {
+                    padding: 30px 30px 30px 0;
+                    border-left: none;
+                    border-right: 1px solid #444c80;
+                    @media (max-width: $max-9) {
+                        padding: 25px 25px 25px 0;
+                    }
+                    @media (max-width: $max-5) {
+                        padding: 20px 20px 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
